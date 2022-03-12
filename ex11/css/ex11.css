@@ -1,0 +1,71 @@
+
+body {
+font-family: Arial;
+	font-size: 12px;
+	margin:10px;
+	line-height: 35px;
+	height: 990px;
+	background: linear-gradient(#FFDAB9, white);
+}
+label{
+	font-size: 20px;
+	color:#A52A2A;
+	font-family: Monaco;
+	width: 390px;
+	display:block;
+	float:left;
+	text-align: right;
+	margin-right:10px;
+}
+input[type="text"]{
+	height:20px;
+	width: 30px;	
+}
+.campocl{margin-left:38px;
+}
+.campocl2{margin-left:76px;
+}
+.campocl3{margin-left:113px;
+}
+.campocl4{margin-left:151px;
+}
+h1{
+	margin-left: 395px;
+}
+input[type="submit"]{
+	height:60px;
+	width: 90px;
+	font-size: 16px;
+	color: #A52A2A;
+	background: linear-gradient( white,#EECBAD);
+	cursor: pointer;
+}
+input[type="submit"]:hover{
+	height:60px;
+	width: 90px;
+	font-size: 16px;
+	color: #A52A2A;
+	background: linear-gradient( white,#EECBAD);
+	cursor: pointer;
+	border-color: #A52A2A;
+	border-radius: 4px;
+}
+input[type="button"]{
+	height:60px;
+	width: 90px;
+	font-size: 16px;
+	color: #A52A2A;
+	font-weight: bold;
+	background: linear-gradient( white,#EECBAD);
+	cursor: pointer;
+}
+input[type="button"]:hover{
+	height:60px;
+	width: 90px;
+	font-size: 16px;
+	color: #A52A2A;
+	background: linear-gradient( white,#EECBAD);
+	cursor: pointer;
+	border-color: #A52A2A;
+	border-radius: 4px;
+}

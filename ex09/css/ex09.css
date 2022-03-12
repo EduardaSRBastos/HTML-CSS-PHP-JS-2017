@@ -1,0 +1,25 @@
+body{
+	height: 990px;
+	background: linear-gradient(#F4A460, white);
+}
+
+table{
+	border: 50px outset #8B7765;
+	margin-right:auto;
+	 margin-left:auto;
+	 margin-top:25px;
+	
+}
+td{border: 1px solid black;
+width: 80px;
+height: 80px;	
+}
+img{width: 80px;
+height: 80px;}
+h1{
+	font-family:Bradley Hand, cursive;
+	color:#8B4500;
+	border: 3px #af5515 solid;
+	border-radius: 16px;
+background:radial-gradient( circle,#FFFFF0,#D2691E) ;
+}

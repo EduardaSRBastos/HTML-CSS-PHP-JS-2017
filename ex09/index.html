@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>xadrez</title>
+	<link rel="stylesheet" type="text/css" href="css/ex09.css">
+	<h1 align="center">Xadrez </h1>
+</head>
+<body onload= "xadrez()">
+	<table id="Table">	
+</table>
+	<script>
+function xadrez() {	
+    var tabela = document.getElementById("Table");	 
+    for(var i=0; i<=7;i++)
+    {
+    	var row= tabela.insertRow(i);	 			
+		for(var j=0; j<=7;j++)
+			{	var cell1 = row.insertCell(j);	
+		if(i%2==j%2)
+		{			
+		   cell1.style.background= "white";}
+		   else{    	  
+		    cell1.style.background= "#CDC0B0";}									
+	}	
+ 	}
+	 for(var i=0; i<=7;i++)
+    {var imgArray = ["imgs/torre.png", "imgs/cavalo.png","imgs/bispo.png","imgs/rei.png","imgs/rainha.png","imgs/bispo.png","imgs/cavalo.png","imgs/torre.png"];
+	var imga= document.createElement("IMG");
+	imga.setAttribute("src",imgArray[i]);
+	var z = document.getElementById("Table").rows[0].cells;
+    z[i].appendChild(imga);
+	
+	var imgArraybra = ["imgs/torre_br.png", "imgs/cavalo_br.png","imgs/bispo_br.png","imgs/rei_br.png","imgs/rainha_br.png","imgs/bispo_br.png","imgs/cavalo_br.png","imgs/torre_br.png"];
+	var imgag= document.createElement("IMG");
+	imgag.setAttribute("src",imgArraybra[i]);
+	var h = document.getElementById("Table").rows[7].cells;
+    h[i].appendChild(imgag);
+	
+	var peao= document.createElement("IMG");
+	peao.setAttribute("src","imgs/peao.png");
+	var linpeao = document.getElementById("Table").rows[1].cells;
+    linpeao[i].appendChild(peao);
+	var peaobra= document.createElement("IMG");
+	peaobra.setAttribute("src","imgs/peao_br.png");
+	var linpeaobra = document.getElementById("Table").rows[6].cells;
+    linpeaobra[i].appendChild(peaobra);}
+}
+</script>
+<br>
+	<p>Eduarda Bastos &copy Todos os direitos reservados. 2017</p>
+
+</body>
+</html>

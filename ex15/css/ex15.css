@@ -1,0 +1,18 @@
+
+body {
+	font-family: Arial;
+	font-size: 15px;
+	margin:50px;
+	line-height: 29px;
+}
+label{
+	font-size: 25px;
+	color:#A52A2A;
+	font-family: Monaco;
+	width: 210px;
+	display:block;
+	float:left;
+}
+
+
+

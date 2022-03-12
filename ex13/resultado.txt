@@ -1,0 +1,54 @@
+﻿ Nome:a
+ Morada:a
+ Data de Nascimento:11/20/2017
+ Email:@
+ Género:Feminino
+ Disciplina:PortuguêsDisciplina:Disciplina:
+ Turma:12º
+ Ficheiro:differences-between-html-and-html5.png
+ 
+ Nome:a
+ Morada:a
+ Data de Nascimento:11/22/2017
+ Email:@
+ Género:Feminino
+ Disciplina:PortuguêsDisciplina:Disciplina:
+ Turma:11º
+ Ficheiro:Proposta de trabalho N1 Audio.pdf
+ 
+ Nome:a
+ Morada:s
+ Data de Nascimento:11/23/2017
+ Email:@
+ Género:Feminino
+ Disciplinas:Português
+ Turma:11º
+ Ficheiro:'Ormie' by Arc Productions Disney Favorite (online-audio-converter.com).mp3
+ 
+ Nome:a
+ Morada:s
+ Data de Nascimento:11/22/2017
+ Email:@
+ Género:Feminino
+ Disciplinas:PortuguêsProgramação da Internet
+ Turma:12º
+ Ficheiro:'Ormie' by Arc Productions Disney Favorite (online-audio-converter.com).mp3
+ 
+ Nome:a
+ Morada:s
+ Data de Nascimento:11/22/2017
+ Email:@
+ Género:Feminino
+ Disciplinas:Português Matemática Programação da Internet
+ Turma:11º
+ Ficheiro:'Ormie' by Arc Productions Disney Favorite (online-audio-converter.com).mp3
+ 
+ Nome:a
+ Morada:a
+ Data de Nascimento:11/23/2017
+ Email:@
+ Género:Feminino
+ Disciplinas:Português  
+ Turma:11º
+ Ficheiro:SoundTrack.docx
+ 

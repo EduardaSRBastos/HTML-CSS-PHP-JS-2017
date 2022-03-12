@@ -1,0 +1,29 @@
+body {
+	background: #fff000;
+	color: #627af4;
+	width: 990px;
+	margin: 20px auto;
+	font-family: verdana;
+	font-size: 15px;
+	text-align: justify;
+	
+}
+a{
+	text-decoration: none;
+	color: orange;
+	background: black;
+	font-size: 18px;
+	padding: 10px 20px;
+	margin-right: 20px;
+}
+a:hover {
+	color: black;
+	background: orange;
+}
+img{
+	border-top:10px solid orange;
+	border-left:10px solid orange;
+	border-bottom:10px solid black;
+	border-right:10px solid black;
+	margin: 50px auto;
+}

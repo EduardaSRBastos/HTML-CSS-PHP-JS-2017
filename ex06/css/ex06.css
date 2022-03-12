@@ -1,0 +1,26 @@
+body {
+	background: #B0E2FF;
+	color: #3A5FCD;
+	width: 990px;
+	font-family: verdana;
+	font-size: 15px;
+	text-align: justify;
+	margin: 10px auto;	
+}
+a{
+	text-decoration: none;
+	color: #FFD700;
+	background: #8B4513;
+	font-size: 18px;
+	padding: 10px 20px;
+	margin-bottom: 50px;
+}
+a:hover {
+	color: #8B4513;
+	background: #FFD700;
+
+}
+img{ margin-bottom: 20px;
+	align-items: center;
+	
+}

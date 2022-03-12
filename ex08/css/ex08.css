@@ -1,0 +1,83 @@
+body.borboleta {
+	background: #F4A460;
+	color: #3A5FCD;
+	width: 990px;
+	font-family: verdana;
+	font-size: 15px;
+	text-align: justify;
+	margin: 10px auto;	
+}
+body.index {
+	background: #6495ED;
+	color: #B0E2FF;
+	width: 990px;
+	font-family: arial;
+	font-size: 15px;
+	text-align: justify;
+	margin: 10px auto;	
+}
+body.tigre {
+	background: #FFA500;
+	color: #CD6839;
+	width: 990px;
+	font-family: veranda;
+	font-size: 19px;
+	text-align: justify;
+	margin: 0px auto;	
+}
+body.tartaruga {
+	background: #98FB98;
+	color: #6B8E23;
+	width: 990px;
+	font-family: verdana;
+	font-size: 15px;
+	text-align: justify;
+	margin: 10px auto;	
+}
+body.suricata {
+	background: #FFD39B;
+	color: #8B4726;
+	width: 990px;
+	font-family: verdana;
+	font-size: 15px;
+	text-align: justify;
+	margin: 10px auto;	
+}
+a{
+	text-decoration: none;
+	color: #FFD700;
+	background: #8B4513;
+	font-size: 18px;
+	padding: 10px 20px;
+	margin-bottom: 50px;
+}
+a:hover {
+	color: #8B4513;
+	background: #FFD700;
+}
+img{ margin-bottom: 20px;
+}
+.imgindex{
+	margin:0px 100px 10px 250px;
+	border: 12px #3A5FCD outset;
+}
+.textiger{
+	
+	float: left;
+	width: 550px;
+}
+.imgtiger{
+
+	border: 5px #FF7256 dashed;
+	
+	float: right;
+	width: 420px;
+}
+.imgtartaruga{
+	border: 15px #6B8E23 double;
+	margin:0px 100px 10px 230px;
+	border-radius: 25%;
+}
+.imgsuricata{
+	margin:0px 90px 10px 200px;
+	border: 12px #8B4513 ridge;}

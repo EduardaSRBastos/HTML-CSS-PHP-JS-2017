@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulário</title>
+	<link rel="stylesheet" type="text/css" href="css/ex13.css">	
+	 <link rel="stylesheet" href="css/jquery-ui.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.js"></script>
+<script>
+  $( function() {
+  	 $( "#datepicker" ).datepicker({ maxDate: 0 });
+    $( "#datepicker" ).datepicker();
+    $( "#format" ).on( "change", function() {
+      $( "#datepicker" ).datepicker( "option", "dateFormat", $( this ).val() ); }); 
+  } );
+  </script>
+</head>
+<body >	
+        <form name="frmContactos" action="resultado.php" method="post" enctype="multipart/form-data" onsubmit="javascript: return checkfields()">
+            <div class="dados">
+            <label >Nome</label>
+            <input type="text" name="nome" value="">
+            </div>
+            <div class="dados">
+            <label>Morada</label>
+            <input type="text" name="morada" value="">
+            </div>
+            <div class="dados">
+            <label>Data de Nascimento</label>
+            <input type="text" name="data" value="" id="datepicker">
+            </div>
+            <div class="dados">
+            <label>Email</label>
+            <input type="text" id="contem" name="email" value="">
+        </div><div class="dados">
+            <label>Género</label>            
+                <input type="radio" name="sexo" value="1" checked> Feminino                
+                <input type="radio" name="sexo" value="2"> Masculino
+            </div>
+<div class="dados">
+            <label >Disciplinas</label>           
+                <input type="checkbox" name="port" value="1" > Português
+                <input type="checkbox" name="mat" value="1"> Matemática
+                <input type="checkbox" name="pi" value="1"> Programação da Internet
+            </div>            
+<div class="dados">
+            <label >Turma</label>           
+                <select name="turma">
+                    <option value="">Escolha uma opção</option>
+                    <option value="1">10º ITM</option>
+                    <option value="2">11º ITM</option>
+                     <option value="3">12º ITM</option>
+                </select>
+            </div>                            
+           <div class="dados">
+            <label >Ficheiro</label>
+
+            <input type="file" name="ficheiro" value="">
+            </div> <div class="dados">
+            <input type="submit" name="submeter" value="Submeter">
+             </div>
+        </form>
+<script type="text/javascript">
+    function checkfields() {
+        if(document.frmContactos.nome.value == "") {
+            alert("Tem de preencher o campo nome!");
+            document.frmContactos.nome.focus();
+            return false;
+        }
+         if(document.frmContactos.morada.value == "") {
+            alert("Tem de preencher o campo morada!");
+            document.frmContactos.morada.focus();
+            return false;
+        }
+         if(document.frmContactos.data.value == "") {
+            alert("Tem de preencher o campo data de nascimento!");
+            document.frmContactos.data.focus();
+            return false;
+        }
+         if(document.frmContactos.email.value.indexOf("@")>-1) {           
+        }
+        else{
+            alert("Tem de preencher um email válido!");
+            document.frmContactos.email.focus();
+            return false;
+        }       
+         if(document.frmContactos.turma.value == "") {
+            alert("Tem que escolher o campo turma!");
+            document.frmContactos.turma.focus();
+            return false;
+        }
+         if(document.frmContactos.ficheiro.value == "") {
+            alert("Tem que escolher um ficheiro no campo ficheiro!");
+            document.frmContactos.file.focus();
+            return false;
+        }
+         if(document.frmContactos.mat.checked==false  && document.frmContactos.port.checked==false && document.frmContactos.pi.checked==false) {
+            alert("Tem que escolher pelo menos uma disciplina no campo disciplinas!");
+            document.frmContactos.port.focus();           
+            return false;
+        }      
+        return true;
+    }  
+ }
+</script>
+</body>
+</html>

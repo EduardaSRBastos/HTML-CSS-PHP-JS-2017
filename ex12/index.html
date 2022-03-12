@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html >
+<head >
+	<meta charset="utf-8">
+	<title>Configuração Automóveis</title>
+	<link rel="stylesheet" type="text/css" href="css/ex12.css">
+</head>
+<body onclick="modelo()">	
+<p class="titulo"> Modelo </p>
+<form onclick="esconderr()">
+	<input type="radio" name="modelo" id="bmw" value= "BMW" checked>BMW 120d 5 portas
+	<input type="radio" name="modelo" id="audi" value= "Audi">Audi A4 allroad Quattro
+</form>
+<p class="titulo">Dados Técnicos</p> 
+<p id="Dados"> </p>
+<img id="ver" src="imgs/abrir.png" alt= "" onclick="abrir()" >
+<p class="titulo">Pintura</p>
+<form class="mostrar" onclick="bmwpinturas()">
+	<input type="radio" name="pintura" id="bmwpretos" value= "Pretos" onchange="precosbmw()" checked>Preto Sólido (0€)
+	<input type="radio" name="pintura" id="bmwcinzas"  value= "Cinzas" onchange="precosbmw()">Cinza Mineral Metalizado (713€)
+	</form>
+	<form  class="esconder" onclick="audipinturas()">
+	<input type="radio"  name="pintura" id="audipretos" value= "Pretos" onchange="precosaudi()" checked>Preto Sólido (0€)
+	<input type="radio"  name="pintura" id="audicinzas"  value= "Cinzas" onchange="precosaudi()">Cinza Manhattan Metalizado (1.050€)	
+</form>
+<p class="titulo">Jantes</p>
+<form class="mostrar" onclick="bmwjantess()">
+	<input type="radio" name="jante" id="bmwcinza"  value= "Cinza" checked>JLL 378 16" F/T:205/55R16 (0€)
+	<input type="radio" name="jante" id="bmwpret" value= "Pret">JLL 406 16" F/T:205/55R16 (0€)
+
+</form> <form class="esconder" onclick="audijantess()">
+	<input type="radio"  name="jante" id="audicinza"  value= "Cinza" onchange="precosaudi()" checked >Jantes de liga leve 7,5Jx17 com multi-raios e pneus 225/55 R17 (0€)
+	<input type="radio" name="jante" id="audiestrela" onchange="precosaudi()" value= "Estrela">Jantes de liga leve 7,5Jx17 com 5 raios paralelos e pneus 225/50 R17 (295€)
+</form>
+
+<p class="titulo">Preço</p>
+<p class="mostrar" id ="bmwpreco">40.160,00€ </p>
+<p class="esconder" id ="audipreco">57.190,00€ </p>
+<img id="bmwpretometal" src="imgs/bmw_jantescinzapreto.png" alt= "">
+<script type="text/javascript">
+	function abrir()
+	{var veri = document.getElementById("ver").getAttribute("src");
+if(veri=="imgs/fechar.png")
+{document.getElementById("Dados").style.display="none";
+document.getElementById("ver").src="imgs/abrir.png";}
+else{document.getElementById("Dados").style.display="block";
+document.getElementById("ver").src="imgs/fechar.png";}
+}	
+function precosaudi()
+	{var preaudi = document.getElementById("audipreco");
+if((document.getElementById("audicinzas").checked) && (document.getElementById("audicinza").checked))
+{preaudi.innerHTML="58.240,00€";
+preaudi.appendChild(preaudi);}
+else if((document.getElementById("audicinzas").checked) && (document.getElementById("audiestrela").checked))
+{preaudi.innerHTML="58.535,00€";
+preaudi.appendChild(preaudi);}
+else if((document.getElementById("audipretos").checked) && (document.getElementById("audiestrela").checked))
+{preaudi.innerHTML="57.485,00€";
+preaudi.appendChild(preaudi);}
+else if((document.getElementById("audipretos").checked) && (document.getElementById("audicinza").checked))
+{preaudi.innerHTML="57.190,00€";
+preaudi.appendChild(preaudi);}	
+}	
+function precosbmw()
+{var pre = document.getElementById("bmwpreco");
+if(document.getElementById("bmwcinzas").checked)
+{pre.innerHTML="40.873,00€";
+pre.appendChild(pre);}
+else{pre.innerHTML="40.160,00€";
+pre.appendChild(pre);}}
+function bmwpinturas()
+{if(document.getElementById("bmwcinzas").checked){
+document.getElementById("bmwpretometal").src="imgs/bmw_jantescinzacinza.png";
+}else if(document.getElementById("bmwpretos").checked){
+document.getElementById("bmwpretometal").src="imgs/bmw_jantescinzapreto.png";
+}
+}function bmwjantess(){
+	if(document.getElementById("bmwcinza").checked && document.getElementById("bmwpretos").checked){
+document.getElementById("bmwpretometal").src="imgs/bmw_jantescinzapreto.png";
+}else if(document.getElementById("bmwpret").checked && document.getElementByItj{kmrsutos+/okmgkoem-{noow}mo~~oguummmmo~v{yml*bowrwuomuumn+/ss?kmowowm_jantess{o~asrwuo~~og;?iv(gocwe~}.gowumeounwg}Mlmogowsk{mc{oimgkgesgondoswmo~~gwtgmw}enc}menvnowwmnmwn}cygokwwo{moloou~u~gmMnmoo~|vy{dj?rwzr}}oomusg;.wovimsoko_ji}m{kozacoo{a>pgn{{}w{}.{vylooumw~|o}vglooonO{Im~crmw{wubm>jms{o}.wvylooumw~|o}vooomg}J}Im-*mmn~osc{os|ok}okm{~ok}om~}netElementById("bmwpretometal").src="imgs/bmw_jantespretocinza.png";
+}
+}
+function audipinturas()
+{if(document.getElementById("audicinzas").checked){
+document.getElementById("bmwpretometal").src="imgs/audi_jantescinzacinza.png";
+}else if(document.getElementById("audipretos").checked){
+document.getElementById("bmwpretometal").src="imgs/audi_jantescinzapreto.png";
+}
+}function audijantess(){
+	if(document.getElementById("audicinza").checked && document.getElementById("audipretos").checked){
+document.getElementById("bmwpretometal").src="imgs/audi_jantescinzapreto.png";
+}else if(document.getElementById("audiestrela").checked && document.getElementById("audipretos").checked){
+document.getElementById("bmwpretometal").src="imgs/audi_jantesestrelapreto.png";
+}if(document.getElementById("audicinza").checked && document.getElementById("audicinzas").checked){
+document.getElementById("bmwpretometal").src="imgs/audi_jantescinzacinza.png";
+}else if(document.getElementById("audiestrela").checked && document.getElementById("audicinzas").checked){
+document.getElementById("bmwpretometal").src="imgs/audi_jantesestrelacinza.png";
+}}
+function modelo()
+{
+if(document.getElementById("bmw").checked)	
+{	
+	var paragraph = document.getElementById("Dados").innerHTML="<b> Consumo </b><br>EU / cidade (l/100 km)-> 5,5–5,0 [5,1–4,6]	<br>EU / estrada (l/100 km)-> 3,9–3,6 [3,9–3,5]	<br>EU / combinado (l/100 km)-> 4,5–4,1 [4,3–3,9]	<br>Emissões de CO2 (g/km)-> 118–108 [114–103]	<br>Capacidade do depósito (L) aprox.-> 52<br> <br><b>Prestações</b><br>Velocidade máxima em km/h-> 228 [228]	<br>Aceleração 0 - 100 km/h (s)-> 7,1 [7,0]<br> <br><b>Peso</b><br>Tara EU em kg-> 1.450 [1.465]	<br>Peso total permitido em kg-> 1.940 [1.955]	<br>Carga útil em kg-> 565	<br>Carga sobre eixos à frente/atrás em kg-> 900/1.090	<br> <br><b>Motor</b><br>Cilindros/válvulas por cilindro-> 4/4	<br>Cilindrada em cm³-> 1.995	<br>Curso/diâmetro em mm-> 90,0/84,0	<br>Potência máxima em kW (cv)/rpm-> 140 (190)/4.000	<br>Binário máximo (Nm)/rpm-> 400/1.750–2.250	<br>Compressão: 1-> 16,5	<br> <br><b>Jantes</b><br>Dimensão dos pneus da frente-> /55 R16 91 V	<br>Dimensão dos pneus traseiros-> 205/55 R16 91 V	<br>Dimensão das jantes da frente-> 7 J x 16'', Liga leve	<br>Dimensão das jantes traseiras-> 7 J x 16'', Liga leve";
+	paragraph.appendChild(paragraph);
+}
+else if(document.getElementById("audi").checked)
+{
+var paragraph2 = document.getElementById("Dados").innerHTML="<b> Consumo </b> <br> Combinado (l/100 km)-> 4,9 <br> Urbano (l/100 km)-> 5,5 <br> Extra-urbano (l/100 km)-> 4,6	<br>Emissões de CO2 (g/km)-> 128	<br>Capacidade do depósito (L) aprox.-> 58<br> <br><b>Prestações</b><br>Velocidade máxima em km/h-> 220	<br>Aceleração 0 - 100 km/h (s)-> 7,8 <br> Carga útil em L-> 505 <br> <br><b>Peso</b><br>Tara  em kg-> 1.715	<br> <br><b>Motor</b><br>Válvulas-> 16	<br>Cilindrada em cm³-> 1.968	<br>Curso/diâmetro em mm-> 95,5/81,0	<br>Potência máxima em kW (cv)/rpm-> 140 (190)/4.200	<br>Binário máximo (Nm)/rpm-> 400/1.750–3000	<br>Compressão: 1-> 15,5	<br> <br><b>Jantes</b><br>Dimensão dos pneus-> 225/55 R17 <br>Dimensão das jantes-> 7.5 J x 17'', Liga leve";
+	paragraph2.appendChild(paragraph2);
+}
+}
+function esconderr()
+{document.getElementById("bmwpretometal").src="imgs/bmw_jantescinzapreto.png";
+if(document.getElementById("bmw").checked)	
+{var classe= document.getElementsByClassName("esconder");
+var bm= document.getElementsByClassName("mostrar");
+	for(var i=0; i <= classe.length ; i++)
+	{	
+	var coisa =classe[i].style.display="none";
+	var coisabm =bm[i].style.display="block";
+}	
+}
+else if(document.getElementById("audi").checked)
+{document.getElementById("bmwpretometal").src="imgs/audi_jantescinzapreto.png";
+	var classe2= document.getElementsByClassName("esconder");
+var bm2= document.getElementsByClassName("mostrar");
+	for(var j=0; j <= classe2.length ; j++)
+	{	
+	var coisa2 =classe2[j].style.display="block";
+		var coisabm2=bm2[j].style.display="none";
+}		
+}
+}
+</script>
+</body>
+</html>

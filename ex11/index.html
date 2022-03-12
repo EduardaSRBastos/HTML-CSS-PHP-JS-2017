@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Formulário</title>
+	<link rel="stylesheet" type="text/css" href="css/ex11.css">	
+	 <link rel="stylesheet" href="css/jquery-ui.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.js"></script>
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+    $( "#format" ).on( "change", function() {
+      $( "#datepicker" ).datepicker( "option", "dateFormat", $( this ).val() );
+    });
+  } );
+  </script>
+</head>
+<body >	
+	
+        <form name="frmContactos" action="resultado.html" method="post" enctype="multipart/form-data" onkeyup="javascript: mediwa()" onsubmit="return checkfields()">
+            <div class="disciplina">
+            	<h1>10º 11º 12º &nbsp;&nbsp;Média</h1>
+            <label >Português</label>
+            <input type="text" name="port" value="">
+            <input type="text" name="port1" value="">
+            <input type="text" name="port2" value="">
+            <input type="text" id="mediaport" name="total" value=""  class="campocl" >
+            </div>
+            <div class="disciplina">
+            <label>Inglês</label>
+            <input type="text" name="ing" value="">
+             <input type="text" name="ing1" value="">
+              <input type="text" id="mediaing" name="media" value="" class="campocl2">
+
+            </div>
+            <div class="disciplina">
+            <label >Filosofia</label>
+            <input type="text" name="filo" value="">
+             <input type="text" name="filo1" value="">
+              <input type="text" id="mediafilo" name="media" value="" class="campocl2">
+
+            </div>
+             <div class="disciplina">
+            <label >Educação Física</label>
+            <input type="text" name="ef" value="">
+             <input type="text" name="ef1" value="">
+              <input type="text" name="media" id="mediaef" value="" class="campocl2">
+
+            </div>
+             <div class="disciplina">
+            <label >Matemática A</label>
+            <input type="text" name="mat" value="">
+             <input type="text" name="mat1" value="">
+            <input type="text" name="mat2" value="">
+             <input type="text" name="media" id="mediamat" value="" class="campocl">
+            </div>
+
+             <div class="disciplina">
+            <label >Física e Química A</label>
+            <input type="text" name="fq" value="">
+             <input type="text" name="fq1" value="">
+              <input type="text" name="media" id="mediafq" value="" class="campocl2">
+
+            </div>
+               <div class="disciplina">
+            <label >Moral, Ética e Deontologia</label>
+
+             <input type="text" name="med1" value="" class="campocl">
+            <input type="text" name="med2" value="">
+             <input type="text" name="media" id="mediamed" value="" class="campocl">
+            </div>
+               <div class="disciplina">
+            <label >Aplicações Informáticas</label>
+            <input type="text" name="ai" value="">
+             <input type="text" name="media" id="mediaai" value="" class="campocl3">
+
+            </div>
+               <div class="disciplina">
+            <label >Fundamentos e Arquitetura de Computadores</label>
+            <input type="text" name="fac" value="">
+             <input type="text" name="fac1" value="">
+              <input type="text" name="media" id="mediafac" value="" class="campocl2">
+
+            </div>
+               <div class="disciplina">
+            <label >Técnicas de Programação</label>
+            <input type="text" name="tp" value="">
+             <input type="text" name="tp1" value="">
+              <input type="text" name="media" value="" id="mediatp" class="campocl2">
+  
+            </div>
+               <div class="disciplina">
+            <label >Implementação e Exploração de Base de Dados</label>
+
+             <input type="text" name="iebd1" value="" class="campocl">
+            <input type="text" name="iebd2" value="">
+             <input type="text" name="media" value="" id="mediaiebd" class="campocl">
+            </div>
+               <div class="disciplina">
+            <label >Programação Internet</label>
+
+            <input type="text" name="pi" value="" class="campocl2">
+             <input type="text" name="media" value="" id="mediapi" class="campocl">
+            </div>
+               <div class="disciplina">
+            <label >Tecnologias e Desenvolvimento Multimédia</label>
+
+            <input type="text" name="tdm" value="" class="campocl2">
+             <input type="text" name="media" value="" id="mediatdm" class="campocl">
+            </div>
+               <div class="disciplina">
+            <label >Projeto Tecnológico</label>
+            <input type="text" name="projecto" value="" class="campocl">
+ 			<input type="text" name="media" value="" id="mediapt" class="campocl2">
+
+            </div>
+               <div class="disciplina">
+            <label >Formação em Contexto de Trabalho</label>
+			<input type="text" name="fct" value="" class="campocl">
+             <input type="text" name="fct1" value="">
+ 			<input type="text" name="media" value="" id="mediafct" class="campocl">
+            </div>
+            
+             <div class="disciplina">
+            <label >Média Final</label>
+			<input type="text" name="medf" id="mediaf" value="" class="campocl4">         
+            </div>
+
+             <div class="disciplina">
+            <label >Prova de Aptidão Tecnológica</label>
+			<input type="text" name="pat" id="pat" value="" class="campocl2">
+			<input type="text" name="media" value="" id="mediapat" class="campocl">          
+            </div>
+
+             <div class="disciplina">
+            <label >Média Final de Curso</label>
+			<input type="text" name="mfca" id="mfc" value="" class="campocl4">         
+            </div>
+            <br>
+            <input type="button" name="Print Screen" value = "Imprimir" onclick="window.print();"/>
+             <div class="submit">
+             	<br>
+            <input type="submit" name="submeter" value="Submeter" >            
+             </div>
+        </form>
+    
+
+<script type="text/javascript">
+    function checkfields() {
+        if(document.frmContactos.port.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.port.focus();
+            return false;
+        }
+         if(document.frmContactos.port1.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.port1.focus();
+            return false;
+        }
+         if(document.frmContactos.port2.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.port2.focus();
+            return false;
+        }
+         if(document.frmContactos.ing.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.ing.focus();
+            return false;
+        }
+         if(document.frmContactos.ing1.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.ing1.focus();
+            return false;
+        }
+         if(document.frmContactos.filo.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.filo.focus();
+            return false;
+        }
+         if(document.frmContactos.filo1.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.filo1.focus();
+            return false;
+        }
+         if(document.frmContactos.ef.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.ef.focus();
+            return false;
+        }
+         if(document.frmContactos.ef1.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.ef1.focus();
+            return false;
+        }
+         if(document.frmContactos.mat.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.mat.focus();
+            return false;
+        }
+         if(document.frmContactos.mat1.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.mat1.focus();
+            return false;
+        }
+         if(document.frmContactos.mat2.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.mat2.focus();
+            return false;
+        }
+        if(document.frmContactos.fq.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactosfq.focus();
+            return false;
+        }
+        if(document.frmContactos.fq1.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.fq1.focus();
+            return false;
+        }
+        if(document.frmContactos.med1.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.med1.focus();
+            return false;
+        }
+        if(document.frmContactos.med2.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.med2.focus();
+            return false;
+        }
+        if(document.frmContactos.ai.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.ai.focus();
+            return false;
+        }
+        if(document.frmContactos.fac.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.fac.focus();
+            return false;
+        }
+        if(document.frmContactos.fac1.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.fac1.focus();
+            return false;
+        }
+        if(document.frmContactos.tp.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.tp.focus();
+            return false;
+        }
+        if(document.frmContactos.tp1.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.tp1.focus();
+            return false;
+        }
+        if(document.frmContactos.iebd.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.iebd.focus();
+            return false;
+        }
+        if(document.frmContactos.iebd1.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.iebd1.focus();
+            return false;
+        }
+        if(document.frmContactos.pi.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.pi.focus();
+            return false;
+        }
+        if(document.frmContactos.tdm.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.tdm.focus();
+            return false;
+        }
+        if(document.frmContactos.projecto.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.projecto.focus();
+            return false;
+        }
+        if(document.frmContactos.fct.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.fct.focus();
+            return false;
+        }
+        if(document.frmContactos.fct1.value == "") {
+            alert("Tem de preencher o campo.");
+            document.frmContactos.fct1.focus();
+            return false;
+        }             
+        return true;
+    }
+     function mediwa() {
+     	 var x = document.getElementById("mediaport");
+   x.value= (+document.frmContactos.port.value + +document.frmContactos.port1.value + +document.frmContactos.port2.value) /3;
+     	x.value=Math.round(x.value);
+    var y = document.getElementById("mediaing");
+   y.value= (+document.frmContactos.ing.value + +document.frmContactos.ing1.value) /2;
+     	y.value=Math.round(y.value);
+     	var a = document.getElementById("mediafilo");
+  a.value= (+document.frmContactos.filo.value + +document.frmContactos.filo1.value) /2;
+     	a.value=Math.round(a.value);
+     	var z = document.getElementById("mediaef");
+   z.value= (+document.frmContactos.ef.value + +document.frmContactos.ef1.value) /2;
+     	z.value=Math.round(z.value);
+     	var d = document.getElementById("mediamat");
+   d.value= (+document.frmContactos.mat.value + +document.frmContactos.mat1.value + +document.frmContactos.mat2.value) /3;
+     	d.value=Math.round(d.value);
+     	var s = document.getElementById("mediafq");
+   s.value= (+document.frmContactos.fq.value + +document.frmContactos.fq1.value) /2;
+     	s.value=Math.round(s.value);
+     	var t = document.getElementById("mediamed");
+   t.value= (+document.frmContactos.med1.value + +document.frmContactos.med2.value) /2;
+     	t.value=Math.round(t.value);
+     	var r = document.getElementById("mediaai");
+   r.value= (+document.frmContactos.ai.value);
+     	r.value=Math.round(r.value);
+     	var h = document.getElementById("mediafac");
+   h.value= (+document.frmContactos.fac.value + +document.frmContactos.fac1.value) /2;
+     	h.value=Math.round(h.value);
+     	var v = document.getElementById("mediatp");
+   v.value= (+document.frmContactos.tp.value + +document.frmContactos.tp1.value) /2;
+     	v.value=Math.round(v.value);
+     	var i = document.getElementById("mediaiebd");
+   i.value= (+document.frmContactos.iebd1.value + +document.frmContactos.iebd2.value) /2;
+     	i.value=Math.round(i.value);
+     	var o = document.getElementById("mediapi");
+   o.value= (+document.frmContactos.pi.value);
+     	o.value=Math.round(o.value);
+     	var b = document.getElementById("mediatdm");
+   b.value= (+document.frmContactos.tdm.value);
+     	b.value=Math.round(b.value);
+     	var n = document.getElementById("mediapt");
+   n.value= (+document.frmContactos.projecto.value);
+     	n.value=Math.round(n.value);
+     	var j = document.getElementById("mediafct");
+   j.value= (+document.frmContactos.fct.value + +document.frmContactos.fct1.value) /2;
+     	j.value=Math.round(j.value);
+     	var mf = document.getElementById("mediaf");
+  mf.value= (+mediafct.value+ +mediapt.value+ +mediatdm.value+ +mediapi.value+ +mediaiebd.value+ +mediatp.value+ +mediafac.value+ +mediaai.value+ +mediamed.value+ +mediafq.value+ + mediamat.value+ +mediaef.value+ +mediafilo.value+ +mediaing.value+ +mediaport.value) /15;
+     	mf.value=Math.round(mf.value);
+     	var t = document.getElementById("mediapat");
+   t.value= (+document.frmContactos.pat.value);
+     	t.value=Math.round(t.value);
+     	var mfcs = document.getElementById("mfc");
+  mfcs.value= (+mediafct.value+ +mediapt.value+ +mediatdm.value+ +mediapi.value+ +mediaiebd.value+ +mediatp.value+ +mediafac.value+ +mediaai.value+ +mediamed.value+ +mediafq.value+ + mediamat.value+ +mediaef.value+ +mediafilo.value+ +mediaing.value+ +mediaport.value+ +mediapat.value) /16;
+     	mfcs.value=Math.round(mfcs.value);     
+}
+   
+</script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+httpsvalidator.w3.org/nu
+
+https://www.bmw.pt/pt/ssl/configurator.html#/1S71/P0668,S02FD,S04CG,S08R9,S06S3,S02PA,S08KA,S0230,S02VC,S02VB,S0889,S08SM,S0423,S0521,S08S3,S0240,S01CA,S06NH,S01CB,S05DC,S0249,S05DA,S0698,S06AK,S0548,S0428,S07NH,S06AE,S06AC,S04AE,S0650,S0320/config/RIMS/
+
+http://configurator.audi.pt/controller?next=exterior-page&mandant=accx-pt
